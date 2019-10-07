@@ -70,6 +70,7 @@ if [[ ${#INDRI_DIR[@]} -eq 0 ]]; then
 		echo "configuring indri..."
 		INDRI_DIR=(indri-[0-9].[0-9])
 		cd ${INDRI_DIR}
+		chmod +x configure
 		./configure
 		echo "makeing indri..."
 		make
